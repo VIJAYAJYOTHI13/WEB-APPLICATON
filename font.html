@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Loop Example</title>
+</head>
+<body>
+    <h2>Loop Through Object</h2>
+    <button onclick="loopObject()">Show Data</button>
+    <div id="output"></div>
+
+    <script>
+        function loopObject() {
+            const student = {
+                name: "John",
+                age: 18,
+                grade: "A"
+            };
+
+            let result = "";
+
+            // 1. for-in loop
+            result += "<h3>Using for-in:</h3>";
+            for (let key in student) {
+                result += key + ": " + student[key] + "<br>";
+            }
+
+            // 2. for-of loop (convert object to array)
+            result += "<h3>Using for-of:</h3>";
+            let entries = Object.entries(student);
+            for (let item of entries) {
+                result += item[0] + ": " + item[1] + "<br>";
+            }
+
+            // 3. forEach loop (convert object to array)
+            result += "<h3>Using forEach:</h3>";
+            entries.forEach(function(item) {
+                result += item[0] + ": " + item[1] + "<br>";
+            });
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

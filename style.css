@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Iansui&family=Jersey+15&family=Playwrite+AU+VIC+Guides&family=Playwrite+ES+Deco+Guides&family=Playwrite+HU:wght@100..400&family=Playwrite+IN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+body{
+    margin: 0;
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+.navbar-l{
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+.navbar-r{
+   padding-right: 20px;
+   display: flex;
+   align-items: center;
+   font-family: "Sansation", sans-serif;
+
+}
+.a{
+    padding: 10px;
+
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+
+}
+.home-l{
+    padding-left: 100px;
+}
+.home-r{
+    color: white;
+    padding-right: 100px;
+     font-family: "Sansation", sans-serif;
+}
+.logo{
+    height: 10vh;
+}
+.skills{
+    color: white;
+    font-family: "Sansation", sans-serif;
+    text-align: center;
+}
+.head{
+    color: green;
+    font-size: 60px;
+}
+.sub-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.skills-list{
+    border: 3px solid green;
+    padding: 10px;
+    
+}
+.contact{
+    color: white;
+    font-family: "Sansation", sans-serif;
+    text-align: center;
+}
+.con{
+    color: green;
+}
+.iconimage {
+    height: 30px;
+  }

@@ -1,0 +1,18 @@
+.box{
+    text-align: center;
+    border-color: red ;
+    border-style:solid;
+    border-width: 10px;
+    height: 50vh;
+    width: 90;
+    padding-top: 20px;
+    margin: 50;
+  
+   
+}
+
+.heading{
+    border: 5px solid red;
+    display: inline;
+
+}

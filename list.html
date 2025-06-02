@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Attribute Selectors Example</title>
+  <style>
+    /* Select all elements with a title attribute */
+    [title] {
+      background-color: #e0f7fa;
+      padding: 5px;
+    }
+
+    /* Select input with type exactly equal to "text" */
+    input[type="text"] {
+      border: 2px solid rgb(128, 0, 45);
+    }
+
+    /* Select links where href starts with "https" */
+    a[href^="https"] {
+      color: green;
+    }
+
+    /* Select links where href ends with ".pdf" */
+    a[href$=".jpeg"] {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* Select links where href contains "learn" */
+    a[href*="learn"] {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Attribute Selector Demo</h2>
+
+  <input type="text" placeholder="Text input">
+  <input type="password" placeholder="Password input">
+
+  <p title="info">This paragraph has a title attribute.</p>
+
+  <a href="https://example.com">Secure Link (starts with https)</a><br>
+  <a href="d1.jpeg">Download PDF (ends with .pdf)</a><br>
+  <a href="https://learncss.org">Learn CSS (contains 'learn')</a><br>
+
+</body>
+</html>
